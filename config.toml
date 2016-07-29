@@ -1,0 +1,28 @@
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+languageCode = "en-us"
+title = "iamjonfry"
+theme = "hugo-lithium-theme"
+googleAnalytics = ""
+disqusShortname = ""
+
+[permalinks]
+    post = "/:slug/"
+    page = "/:title/"
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/JonathonFry/"
+[[menu.main]]
+    name = "Twitter"
+    url = "https://twitter.com/jonfry22"
+
+[params]
+    description = "iamjonfry.com"
+
+    [params.logo]
+    url = "fry.png"
+    width = 50
+    height = 50
