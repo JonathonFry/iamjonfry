@@ -2,6 +2,7 @@
 date = "2014-05-17T20:05:17+01:00"
 title = "Java - Deep copy vs Shallow copy"
 slug = "java-deep-copy-vs-shallow-copy"
+tags = [ "code" ]
 +++
 
 Today I stumbled across a problem where I was attempting to manipulate what I thought were two completely seperate ArrayLists.

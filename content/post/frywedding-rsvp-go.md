@@ -2,6 +2,7 @@
 date = "2016-05-08T09:40:20+01:00"
 title = "frywedding.com RSVP using Go"
 slug = "frywedding-rsvp-using-go"
+tags = [ "code" ]
 +++
 
 A big part of building frywedding.com was to allow the guests to RSVP online, which *should* be a lot more reliable than sending by post. (No apologies Royal Mail)

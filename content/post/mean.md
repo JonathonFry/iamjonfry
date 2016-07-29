@@ -2,6 +2,7 @@
 date = "2014-05-18T15:00:58+01:00"
 title = "MEAN (MongoDB, Express, AngularJS, NodeJS)"
 slug = "mean"
+tags = [ "code" ]
 +++
 
 I have been keen to start learning some web development for quite some time but have been struggling with a place to start.
