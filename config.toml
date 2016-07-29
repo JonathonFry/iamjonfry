@@ -9,18 +9,10 @@ disqusShortname = ""
     post = "/:slug/"
     page = "/:title/"
 
-[[menu.main]]
-    name = "About"
-    url = "/about/"
-[[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/JonathonFry/"
-[[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/jonfry22"
-
 [params]
     description = "iamjonfry.com"
+    twitter = "https://twitter.com/jonfry22"
+    github = "https://github.com/JonathonFry/"
 
     [params.logo]
     url = "fry.png"
