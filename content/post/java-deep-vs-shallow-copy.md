@@ -5,7 +5,7 @@ slug = "java-deep-copy-vs-shallow-copy"
 tags = [ "code" ]
 +++
 
-Today I stumbled across a problem where I was attempting to manipulate what I thought were two completely seperate ArrayLists.
+Today I stumbled across a problem where I was attempting to manipulate what I thought were two completely separate ArrayLists.
 
 I had an existing ArrayList<Store> of custom Store objects.
 I then proceeded to create a `new ArrayList<Store>` copying the data from the existing ArrayList using `.clone()`

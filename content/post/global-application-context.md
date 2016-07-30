@@ -11,10 +11,12 @@ An example of this, is when you are reading or writing files to disk, as this re
 
 To do this requires you to subclass the Application class.
 
-<script src="https://gist.github.com/jonfry22/75d5a50f3e4792e9939c.js"></script>
+<script src="https://gist.github.com/jonathonfry/75d5a50f3e4792e9939c.js"></script>
 
 You also need to declare this in the application tag of your Android Manifest file
 
-`<application android:name=".MyApplication"
+```xml
+<application android:name=".MyApplication"
        android:icon="@drawable/icon"
-       android:label="@string/app_name">`
+       android:label="@string/app_name">
+```

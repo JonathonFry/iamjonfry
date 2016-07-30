@@ -3,6 +3,7 @@ date = "2016-05-08T09:40:20+01:00"
 title = "frywedding.com RSVP using Go"
 slug = "frywedding-rsvp-using-go"
 tags = [ "code" ]
+categories = ["Hugo"]
 +++
 
 A big part of building frywedding.com was to allow the guests to RSVP online, which *should* be a lot more reliable than sending by post. (No apologies Royal Mail)
@@ -18,7 +19,7 @@ Next step, filter submissions so only invited guests could RSVP.
 
 This required parsing of the form request into an RSVP struct, and ensuring that the `code` field matched a predefined code, sent to users on their invite.
 
-```
+``` go
 func HandlePostRsvp(w http.ResponseWriter, r *http.Request) {
 	parseErr := r.ParseForm()
 
@@ -42,7 +43,7 @@ func HandlePostRsvp(w http.ResponseWriter, r *http.Request) {
 If the form was parsed correctly and the code validation passed, we now need to store the data somewhere. The logical choice was to use a database so I decided on using a simple MySQL database.
 
 SQL table schema:
-```
+```SQL
 CREATE TABLE rsvp (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(100) NOT NULL,
@@ -56,7 +57,7 @@ notes VARCHAR(1000)
 
 Accessing a database in Go is straightforward and many SQL drivers are available, I used the [https://github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql).
 
-```
+```go
 func insertRsvpIntoDatabase(rsvp *Rsvp) error {
 	db, err := sql.Open("mysql", "user:pass@/rsvp")
 
@@ -86,7 +87,7 @@ Lastly we wanted to receive notifications when guests had RSVP'd (it was pretty 
 
 Luckily for me there was an open source library [gomail](https://github.com/go-gomail/gomail) for sending mail using go.
 
-```
+```go
 func notifyRsvpByEmail(rsvp *Rsvp) {
 	m := gomail.NewMessage()
 	m.SetHeader("From", "hello@world.com")
