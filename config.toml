@@ -1,4 +1,4 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://s3-eu-west-1.amazonaws.com/iamjonfry/"
 languageCode = "en-us"
 title = "iamjonfry"
 theme = "hugo-lithium-theme"
