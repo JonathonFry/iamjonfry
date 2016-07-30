@@ -2,8 +2,8 @@ baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "en-us"
 title = "iamjonfry"
 theme = "hugo-lithium-theme"
-googleAnalytics = ""
-disqusShortname = ""
+googleAnalytics = "UA-50203596-1"
+disqusShortname = "iamjonfry"
 
 [permalinks]
     post = "/:slug/"
