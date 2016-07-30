@@ -18,3 +18,11 @@ disqusShortname = "iamjonfry"
     url = "fry.png"
     width = 50
     height = 50
+
+[[menu.main]]
+    name = "code"
+    url = "/tags/code/"
+
+[[menu.main]]
+      name = "photography"
+      url = "/tags/photography/"
