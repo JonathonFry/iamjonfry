@@ -1,0 +1,7 @@
+box: debian
+build:
+  steps:
+    - arjen/hugo-build:
+        version: "0.16"
+        theme: hugo-lithium-theme
+        flags: --buildDrafts=true
