@@ -5,3 +5,9 @@ build:
         version: "0.16"
         theme: hugo-lithium-theme
         flags: --buildDrafts=true
+    - s3sync:
+        source_dir: public/
+        delete-removed: true
+        bucket-url: $AWS_BUCKET_URL
+        key-id: $AWS_ACCESS_KEY_ID
+        key-secret: $AWS_SECRET_ACCESS_KEY
