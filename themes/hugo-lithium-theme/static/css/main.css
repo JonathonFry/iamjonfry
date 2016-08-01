@@ -163,7 +163,7 @@ a {
   padding: 0;
   list-style: none;
   line-height: 1.3em;
-  text-align: center;
+  text-align: left;
   color: #111;
 }
 
@@ -246,6 +246,12 @@ a {
   margin-left: 2px;
 }
 
+.summary-content {
+  font-size: 1em;
+  line-height: 1.8;
+  color: #555;
+}
+
 @media (min-width: 600px) {
   .header {
     padding: 25px 0;
@@ -304,9 +310,4 @@ a {
     font-size: inherit;
   }
 
-  .summary-content {
-    font-size: 19px;
-    line-height: 1.8;
-    color: #555;
-  }
 }
