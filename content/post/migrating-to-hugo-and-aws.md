@@ -22,3 +22,6 @@ https://lustforge.com/2016/02/27/hosting-hugo-on-aws/
 
 correct s3 bucket URL
 http://stackoverflow.com/a/24377823/1022454
+
+cloudflare s3 bucket name
+https://support.cloudflare.com/hc/en-us/articles/200168926-How-do-I-use-CloudFlare-with-Amazon-s-S3-Service-
