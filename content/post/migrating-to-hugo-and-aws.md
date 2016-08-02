@@ -1,31 +1,40 @@
 +++
 date = "2016-07-31T23:36:48+01:00"
 tags = ["code"]
-title = "Migrating to hugo and aws"
-draft = true
-slug = "migrating-to-hugo-and-aws"
+title = "Migrating from ghost to hugo"
+slug = "migrating-from-ghost-to-hugo"
 +++
 
-I've been running a VPS on DigitalOcean for over 3 years and self hosting iamjonfry.com running Ghost.
-Over the weekend I decided to upgrade to Ghost v0.9.0(insert ghost link), however I ran into quite a few issues during the upgrade process (spoiler alert NPM). After cloning the latest zip, running `npm-install --production` would mysteriously end with `Killed`. 
+I've been happily running a VPS on [DigitalOcean](https://m.do.co/c/0804cbb4b4ab) for over 3 years and last year I started running [iamjonfry.com](iamjonfry.com)  using the Ghost blogging platform.
+Over the weekend I decided to upgrade to Ghost to the latest version, [v0.9.0](https://dev.ghost.org/ghost-0-9-0/), however I ran into quite a few issues during the upgrade process (spoiler alert NPM).
 
-automating deployments with wercker
-https://gohugo.io/tutorials/automated-deployments/
+I first updated to the latest supported version of node.js `4.4.7`, and NPM `3.10.5`.
+After downloading and extracting the ghost zip, running `npm-install --production` would mysteriously end with `Killed`.
+After a bit of research (google) I came across others who had experienced the same thing [here](https://www.digitalocean.com/community/questions/npm-gets-killed-no-matter-what) and [here](https://github.com/npm/npm/issues/9005). It turns out that my droplet was OOM(out of memory) whilst attempting to install the dependencies.
 
-blog on auto deployments to S3
-http://danbahrami.io/articles/wercker-s3-workflow-hugo-deploy/
+> You need more ram - *helpful*
 
-IAM user permissions s3 bucket
-https://app.wercker.com/#applications/51c82a063179be4478002245/tab/details
+A temporary fix to this (aka hack) is to create a swap file to be used when the system runs out of memory. I followed a tutorial [here](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04) and it worked as expected allowing me to install the dependencies. However, this annoyed me as I really can't justify having to create a swap file to install dependencies for something as simple as a blog. Plus, watching NPM download half the internet as dependencies was the last straw and motivated me to find a 'better' option.
+\*_The work that is done on Ghost is **excellent** and I don't want to detract in any way from what they are doing_.
 
-aws public access bucket policy
-http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteAccessPermissionsReqd.html
+After some research on static site generators, of which there are many, I came across [hugo](https://gohugo.io/) which is a static site generator written in Go. As I am found of Go and always looking to tinker with it, it seemed like a great fit.
 
-routing rules
-https://lustforge.com/2016/02/27/hosting-hugo-on-aws/
+From zero-to-blog is as easy as installing hugo with brew
 
-correct s3 bucket URL
-http://stackoverflow.com/a/24377823/1022454
+`brew install hugo`
 
-cloudflare s3 bucket name
-https://support.cloudflare.com/hc/en-us/articles/200168926-How-do-I-use-CloudFlare-with-Amazon-s-S3-Service-
+Cloning a theme (in my case the simple but delightful [hugo-lithium-theme](http://themes.gohugo.io/hugo-lithium-theme/))
+
+`git clone https://github.com/jrutheiser/hugo-lithium-theme`
+
+and running it
+
+`hugo server`
+
+As ghost posts are written in markdown, and hugo also uses markdown, migration of my old blog posts was as easy as copying the files over. I don't have any complex tags or setup with ghost so YMMV. Whilst moving my blog to using hugo I decided to also move to using AWS instead of DigitalOcean. This was primarily driven by learning as I wanted experiment with deploying something live to AWS (I still maintain [DigitalOcean](https://m.do.co/c/0804cbb4b4ab) droplet).
+
+I intend to write up a follow-up blog post to this showing how I deployed my website to S3 on AWS, and used [wercker](http://wercker.com/) to automate the deploy process with GitHub.
+
+You can find the source for this blog hosted on [GitHub](https://github.com/JonathonFry/iamjonfry).
+
+J
