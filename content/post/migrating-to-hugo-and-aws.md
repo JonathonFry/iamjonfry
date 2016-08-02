@@ -5,7 +5,7 @@ title = "Migrating from ghost to hugo"
 slug = "migrating-from-ghost-to-hugo"
 +++
 
-I've been happily running a VPS on [DigitalOcean](https://m.do.co/c/0804cbb4b4ab) for over 3 years and last year I started running [iamjonfry.com](iamjonfry.com)  using the Ghost blogging platform.
+I've been happily running a VPS on [DigitalOcean](https://m.do.co/c/0804cbb4b4ab) for over 3 years and last year I started running [iamjonfry.com](http://iamjonfry.com)  using the Ghost blogging platform.
 Over the weekend I decided to upgrade to Ghost to the latest version, [v0.9.0](https://dev.ghost.org/ghost-0-9-0/), however I ran into quite a few issues during the upgrade process (spoiler alert NPM).
 
 I first updated to the latest supported version of node.js **`4.4.7`**, and NPM **`3.10.5`**.
