@@ -1,9 +1,13 @@
 +++
 date = "2016-07-31T23:36:48+01:00"
-tags = []
-title = "migrating to hugo and aws"
+tags = ["code"]
+title = "Migrating to hugo and aws"
 draft = true
+slug = "migrating-to-hugo-and-aws"
 +++
+
+I've been running a VPS on DigitalOcean for over 3 years and self hosting iamjonfry.com running Ghost.
+Over the weekend I decided to upgrade to Ghost v0.9.0(insert ghost link), however I ran into quite a few issues during the upgrade process (spoiler alert NPM). After cloning the latest zip, running `npm-install --production` would mysteriously end with `Killed`. 
 
 automating deployments with wercker
 https://gohugo.io/tutorials/automated-deployments/
