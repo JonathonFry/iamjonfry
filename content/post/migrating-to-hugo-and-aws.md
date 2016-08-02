@@ -1,5 +1,5 @@
 +++
-date = "2016-07-31T23:36:48+01:00"
+date = "2016-08-02T21:45:48+01:00"
 tags = ["code"]
 title = "Migrating from ghost to hugo"
 slug = "migrating-from-ghost-to-hugo"
@@ -8,8 +8,15 @@ slug = "migrating-from-ghost-to-hugo"
 I've been happily running a VPS on [DigitalOcean](https://m.do.co/c/0804cbb4b4ab) for over 3 years and last year I started running [iamjonfry.com](iamjonfry.com)  using the Ghost blogging platform.
 Over the weekend I decided to upgrade to Ghost to the latest version, [v0.9.0](https://dev.ghost.org/ghost-0-9-0/), however I ran into quite a few issues during the upgrade process (spoiler alert NPM).
 
-I first updated to the latest supported version of node.js `4.4.7`, and NPM `3.10.5`.
-After downloading and extracting the ghost zip, running `npm-install --production` would mysteriously end with `Killed`.
+I first updated to the latest supported version of node.js **`4.4.7`**, and NPM **`3.10.5`**.
+After downloading and extracting the ghost zip, running
+```bash
+npm-install --production
+```
+would mysteriously end with
+```bash
+Killed
+```
 After a bit of research (google) I came across others who had experienced the same thing [here](https://www.digitalocean.com/community/questions/npm-gets-killed-no-matter-what) and [here](https://github.com/npm/npm/issues/9005). It turns out that my droplet was OOM(out of memory) whilst attempting to install the dependencies.
 
 > You need more ram - *helpful*
@@ -21,15 +28,21 @@ After some research on static site generators, of which there are many, I came a
 
 From zero-to-blog is as easy as installing hugo with brew
 
-`brew install hugo`
+```bash
+brew install hugo
+```
 
 Cloning a theme (in my case the simple but delightful [hugo-lithium-theme](http://themes.gohugo.io/hugo-lithium-theme/))
 
-`git clone https://github.com/jrutheiser/hugo-lithium-theme`
+```bash
+git clone https://github.com/jrutheiser/hugo-lithium-theme
+```
 
 and running it
 
-`hugo server`
+```bash
+hugo server
+```
 
 As ghost posts are written in markdown, and hugo also uses markdown, migration of my old blog posts was as easy as copying the files over. I don't have any complex tags or setup with ghost so YMMV. Whilst moving my blog to using hugo I decided to also move to using AWS instead of DigitalOcean. This was primarily driven by learning as I wanted experiment with deploying something live to AWS (I still maintain [DigitalOcean](https://m.do.co/c/0804cbb4b4ab) droplet).
 
