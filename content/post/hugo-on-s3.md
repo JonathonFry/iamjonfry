@@ -15,7 +15,7 @@ bucket name = `<domain_name>`
 
 This is also important as I ran into an issue here where I had named my bucket `iamjonfry` instead of `iamjonfry.com` so my DNS settings wouldn't work correctly when using CloudFlare.
 
-> Amazon requires that the CNAME match the bucket name.
+> _Amazon requires that the CNAME match the bucket name._
 
 [See here](https://support.cloudflare.com/hc/en-us/articles/200168926-How-do-I-use-CloudFlare-with-Amazon-s-S3-Service-) for more information.
 
@@ -88,8 +88,8 @@ The user requires the following permissions to sync to the bucket (replace bucke
       ],
       "Effect": "Allow",
       "Resource": [
-          "arn:aws:s3:::[bucket_name]",
-          "arn:aws:s3:::[bucket_name]/*"
+          "arn:aws:s3:::<bucket_name>",
+          "arn:aws:s3:::<bucket_name>/*"
       ]
     }
   ]
