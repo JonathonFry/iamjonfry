@@ -42,6 +42,7 @@ This was important for me as I ran into an issue here where I had named my bucke
 * Set index document to `index.html`
 * Set error document to `404.html`
 * Edit the redirection rules (thanks to [this blog](https://lustforge.com/2016/02/27/hosting-hugo-on-aws/) for pointing me in the right direction)
+
 ```xml
 <RoutingRules>
     <RoutingRule>
