@@ -94,7 +94,7 @@ a {
   padding: 0 15px;
   font-size: 16px;
   line-height: 1.7;
-  color: #555;
+  color:rgba(0,0,0,0.7);
 }
 
 .article-title {
@@ -124,7 +124,7 @@ a {
   margin: 15px 0 25px;
 }
 
-.article-content a {
+.article-content a {  
   text-decoration: none;
   color: inherit;
   border-bottom: 1px solid #CBF8DF;
@@ -164,7 +164,6 @@ a {
   list-style: none;
   line-height: 1.3em;
   text-align: left;
-  color: #111;
 }
 
 .archive-title {
@@ -190,13 +189,17 @@ a {
   text-decoration: none;
   font-size: 21px;
   font-family: 'Futura', sans-serif;
-  color: #222;
+  color: inherit;
   padding: 5px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #CBF8DF;
+  box-shadow: inset 0 -1px 0 #CBF8DF;
+  background: transparent;
+  transition: background 150ms ease;
 }
 
-.archive-item-link:hover {
-  border-bottom-color: #CBF8DF;
+.archive-item-link:hover,
+.archive-item-link:focus {
+  background: #CBF8DF;
 }
 
 .footer {
@@ -248,8 +251,8 @@ a {
 
 .summary-content {
   font-size: 1em;
-  line-height: 1.8;
-  color: #555;
+  line-height: 1.7;
+  color:rgba(0,0,0,0.7);
 }
 
 @media (min-width: 600px) {
