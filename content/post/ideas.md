@@ -15,6 +15,7 @@ Aiming to go over the basics of computer science fundamentals.
 
 ## Data structures & Algorithms
 - Big (O) notation
+- Memory (pointers)
 
 ## Design patterns
 - [Gang of four design patterns](http://en.wikipedia.org/wiki/Design_Patterns_(book))
