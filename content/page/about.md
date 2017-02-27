@@ -4,3 +4,8 @@ tags = []
 title = "about"
 draft = true
 +++
+
+Hi, I'm Jon an Android Engineer.
+
+[Twitter]
+[GitHub]
