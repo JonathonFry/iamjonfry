@@ -2,7 +2,7 @@ box: debian
 build:
   steps:
     - arjen/hugo-build:
-        version: "0.18.1"
+        version: "0.20.1"
         theme: hugo-lithium-theme
     - s3sync:
         source_dir: public/
