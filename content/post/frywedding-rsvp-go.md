@@ -5,9 +5,9 @@ slug = "frywedding-rsvp-using-go"
 tags = [ "code" ]
 +++
 
-A big part of building frywedding.com was to allow the guests to RSVP online, which *should* be a lot more reliable than sending by post. (No apologies Royal Mail)
+A big part of building frywedding.com was to allow the guests to RSVP online, which *should* be a lot more reliable than sending by post (No apologies Royal Mail).
 
-As i've been experimenting with Golang in my spare time I figured it would be a good candidate to build the RSVP backend. I've heard great things about the [scalability](http://marcio.io/2015/07/handling-1-million-requests-per-minute-with-golang/) of golang, so I was sure it would be able to handle requests from 100 guests. (*sarcasm*)
+As I've been experimenting with Go in my spare time I figured it would be a good candidate to build the RSVP backend. I've heard great things about the [scalability](http://marcio.io/2015/07/handling-1-million-requests-per-minute-with-golang/) of Go, so I was sure it would be able to handle requests from 100 guests. (*sarcasm*)
 
 First step was to define the API.
 
@@ -84,7 +84,7 @@ Assuming everything went well we have now inserted the RSVP into the database.
 
 Lastly we wanted to receive notifications when guests had RSVP'd (it was pretty exciting) so I added email integration which sent an email to my wife and I containing the details of the RSVP.
 
-Luckily for me there was an open source library [gomail](https://github.com/go-gomail/gomail) for sending mail using go.
+Luckily for me there was an open source library [gomail](https://github.com/go-gomail/gomail) for sending mail using Go.
 
 ```go
 func notifyRsvpByEmail(rsvp *Rsvp) {
@@ -105,12 +105,12 @@ func notifyRsvpByEmail(rsvp *Rsvp) {
 	}
 }
 ```
-Once i've stripped out some sensitive data from the project i'll publish it to GitHub and update this post.
+Once I've stripped out some sensitive data from the project I'll publish it to GitHub and update this post.
 I'm still learning the language itself and it's best practices, so any suggestions/tips/feedback please let me know.
 
 As with all things it wasn't smooth sailing. Turns out I had typo'd the `code` on the backend so the first few guests were refused RSVP due to an 'invalid code', oops.
 
 
-The rsvp site is still live here - [http://frywedding.com/rsvp.html](http://frywedding.com/rsvp.html)
+The rsvp site is now live here - [http://104.196.7.117:8080/rsvp.html](http://104.196.7.117:8080/rsvp.html)
 
 J

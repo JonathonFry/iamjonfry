@@ -9,7 +9,7 @@ I have been keen to start learning some web development for quite some time but 
 I have been learning bits and pieces on the backend with MongoDB and Node.js, but have always been frustrated when it came to developing on the frontend.
 
 Enter AngularJS...
-I have spent the better part of today playing around with AngularJS and its lovely. I have worked through the following tutorials and found them all great.
+I have spent the better part of today playing around with AngularJS and it's lovely. I have worked through the following tutorials and found them all great.
 
 * [AngularJS in 30 minutes](http://www.revillweb.com/tutorials/angularjs-in-30-minutes-angularjs-tutorial/)
 * [Setting up a mean stack single page application](http://scotch.io/bar-talk/setting-up-a-mean-stack-single-page-application)
@@ -18,4 +18,4 @@ I have spent the better part of today playing around with AngularJS and its love
 
 
 
-If you are interested in developing using MongoDb, NodeJS and AngularJS, I encourage you to check out [MEAN](http://mean.io/). They have developed a fullstack javascript framework using all of the above.
+If you are interested in developing using MongoDb, NodeJS and AngularJS, I encourage you to check out [MEAN](http://mean.io/). They have developed a fullstack JavaScript framework using all of the above.

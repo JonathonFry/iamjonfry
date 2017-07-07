@@ -10,7 +10,7 @@ In case you've been living under a rock for the last few months you will have se
 Kotlin is a JVM language that has 100% interop with Java. This means that it can be used to develop for Android.
 
 I had some time over the Christmas period to play about with Kotlin and loved it. I found it a breath of fresh air coming from the usual verbosity of Java.
-I worked on some of the [adventofcode.com](http://adventofcode.com/) challenges using Kotlin as a way to learn the language. I didn't complete all the challenges, interest seemed to fizzle when the Christmas booze ran out, however the code is up on github [here](https://github.com/JonathonFry/AdventOfCode).
+I worked on some of the [adventofcode.com](http://adventofcode.com/) challenges using Kotlin as a way to learn the language. I didn't complete all the challenges, interest seemed to fizzle when the Christmas booze ran out, however the code is up on GitHub [here](https://github.com/JonathonFry/AdventOfCode).
 
 *Spoiler alert - It's not idomatic Kotlin code..at all.*
 
