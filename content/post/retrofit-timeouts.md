@@ -6,7 +6,7 @@ tags = [ "code" ]
 +++
 
 
-I recently ran into the problem of customising timeouts for different API calls when using [retrofit](http://square.github.io/retrofit/)hugo. 
+I recently ran into the problem of customising timeouts for different API calls when using [retrofit](http://square.github.io/retrofit/). 
 
 Ideally, you would be able to specify a timeout using a custom annotation e.g.
 
@@ -42,7 +42,7 @@ class TimeoutInterceptor : Interceptor {
 }
 {{< /highlight >}}
 
-To use this you add a header with your required timeout to the API declaration and the interceptor will consume this and apply the custom timeout to the chain.
+To use this you add a header with your timeout to the API declaration. The interceptor will consume this and apply the custom timeout to the chain.
 
 {{< highlight kotlin >}}
 @Headers("X-Timeout: 60000")
