@@ -10,6 +10,8 @@ After making the decision to migrate from [hugo to ghost](http://iamjonfry.com/m
 [S3](http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html), a service on AWS, provides static website hosting, and as hugo generates static web files it's a perfect match.
 The following are roughly the steps that I made to automate the deployment of a hugo site to S3.
 
+<!--more-->
+
 **Step 1** - Create a bucket on S3 using your domain name:
 
 bucket name = `<domain_name>`

@@ -7,8 +7,9 @@ tags = [ "code" ]
 
 
 I recently ran into the problem of customising timeouts for different API calls when using [retrofit](http://square.github.io/retrofit/). 
+<!--more-->
 
-Ideally, you would be able to specify a timeout using a custom annotation e.g.
+Ideally, you would be able to specify a timeout using a custom annotation.
 
 {{< highlight kotlin >}}
 interface Api {

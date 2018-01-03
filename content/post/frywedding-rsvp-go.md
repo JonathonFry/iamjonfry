@@ -9,6 +9,8 @@ A big part of building frywedding.com was to allow the guests to RSVP online, wh
 
 As I've been experimenting with Go in my spare time I figured it would be a good candidate to build the RSVP backend. I've heard great things about the [scalability](http://marcio.io/2015/07/handling-1-million-requests-per-minute-with-golang/) of Go, so I was sure it would be able to handle requests from 100 guests. (*sarcasm*)
 
+<!--more-->
+
 First step was to define the API.
 
 Simple enough?

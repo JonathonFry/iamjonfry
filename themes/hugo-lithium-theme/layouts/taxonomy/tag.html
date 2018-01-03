@@ -1,26 +1,19 @@
 {{ partial "header.html" . }}
 
 <main class="content" role="main">
-<h2 class="archive-title">{{ .Title }}</h2>
+  <h2 class="archive-title">{{ .Title }}</h2>
   <div class="article-content">
-    {{ range .Data.Pages.GroupByDate "2006"  }}
-    {{ range where .Pages "Section" "post" }}
+    {{ range .Data.Pages.GroupByDate "2006" }} {{ range where .Pages "Section" "post" }}
     <article class="archive-item">
       <a href="{{ .Permalink }}" class="archive-item-link">{{ .Title }}</a>
       <span class="archive-item-date">
         {{ .Date.Format "January 2, 2006" }}
       </span>
-
-      {{ if in .Params.tags "photography" }}
-        <div class="article-content">
-          {{ .Content }}
-        </div>
-      {{ else }}
-        <p class="summary-content">{{ .Summary }} </p>
-      {{ end }}
+      <div class="article-content">
+        {{ .Content }}
+      </div>
     </article>
-    {{ end }}
-    {{ end }}
+    {{ end }} {{ end }}
   </div>
 
 </main>
