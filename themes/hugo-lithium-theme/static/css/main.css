@@ -270,6 +270,12 @@ a {
   color: rgba(0, 0, 0, 0.7);
 }
 
+.archive-item {
+  font-size: 1em;
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 0.7);
+}
+
 @media (min-width: 600px) {
   .header {
     padding: 25px 0;
