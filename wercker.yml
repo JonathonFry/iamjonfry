@@ -7,7 +7,7 @@ build:
     - script:
         name: check output
         code: |-
-          ls public/
+          hugo && ls public/
     - s3sync:
         source_dir: public/
         delete-removed: true
