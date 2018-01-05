@@ -3,7 +3,7 @@ build:
   steps:
     - arjen/hugo-build:
         version: "0.32.1"
-        theme: hugo-lithium-theme
+        theme: kube
     - s3sync:
         source_dir: public/
         delete-removed: true
