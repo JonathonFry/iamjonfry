@@ -1,7 +1,7 @@
 baseurl = "http://iamjonfry.com/"
 languageCode = "en-us"
 title = "iamjonfry"
-theme = "hugo-lithium-theme"
+theme = "kube"
 googleAnalytics = "UA-50203596-1"
 disqusShortname = "iamjonfry"
 
