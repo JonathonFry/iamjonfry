@@ -2,8 +2,12 @@ box: debian
 build:
   steps:
     - arjen/hugo-build:
-        version: "0.25"
+        version: "0.32.1"
         theme: kube
+    - internal/shell:
+        cmd: /bin/sh  #defaults to /bin/bash
+        code: |
+        ls
     - s3sync:
         source_dir: public/
         delete-removed: true
