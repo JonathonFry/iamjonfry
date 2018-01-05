@@ -4,10 +4,6 @@ build:
     - arjen/hugo-build:
         version: "0.32.1"
         theme: kube
-    - script:
-        name: check output
-        code: |-
-          hugo && ls public/
     - s3sync:
         source_dir: public/
         delete-removed: true
