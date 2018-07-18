@@ -2,7 +2,6 @@ box: debian
 build:
   steps:
     - arjen/hugo-build:
-        version: "1.21.1"
         theme: kube
     - s3sync:
         source_dir: public/
