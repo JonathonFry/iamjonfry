@@ -2,6 +2,11 @@ body {
   font-family: Lato, Arial, sans-serif;
 }
 
+layout {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 h1.title,
 h1,
 h2,
