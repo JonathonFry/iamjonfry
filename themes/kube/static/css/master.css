@@ -2,7 +2,7 @@ body {
   font-family: Lato, Arial, sans-serif;
 }
 
-disqus_thread {
+#disqus_thread {
   padding-left: 1em;
   padding-right: 1em;
 }
