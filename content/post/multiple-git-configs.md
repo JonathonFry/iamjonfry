@@ -1,6 +1,7 @@
 ---
 title: "Splitting SSH and git configs"
 date: 2018-07-24T18:28:07+01:00
+tags: ["code"]
 ---
 
 
@@ -14,7 +15,9 @@ This allows me to clone any project, work or personal and get started straight a
 
 #### Step 1: Create SSH key
 
-`ssh-keygen -t rsa -C "j.fry@work.com"` 
+```bash
+ssh-keygen -t rsa -C "j.fry@work.com"
+```
 
 When asked for the name give a new file name: `id_rsa_work`
 
@@ -36,9 +39,13 @@ IdentityFile ~/.ssh/id_rsa_work
 
 You need to register your new SSH keys
 
-`ssh-add ~/.ssh/id_rsa`
+```bash
+ssh-add ~/.ssh/id_rsa
+```
 
-`ssh-add ~/.ssh/id_rsa_work`
+```bash
+ssh-add ~/.ssh/id_rsa_work
+```
 
 <br>
 

@@ -17,4 +17,6 @@ I worked on some of the [adventofcode.com](http://adventofcode.com/) challenges 
 I'm now in the process of converting an existing unreleased project to Kotlin and will blog about any interesting/challenging steps along the way.
 
 P.S Another language plug - I've been writing a few micro services using [golang](https://golang.org/) and found it extremely powerful. Oh and the fact that their mascot is a gopher seals the deal.
+
+
 ![](https://golang.org/doc/gopher/frontpage.png)

@@ -12,12 +12,14 @@ I think it's important that mobile developers don't limit themselves to _just_ f
 
 I've only previously dipped my toe into the world of microservices using node.js and python but i've read a lot of lovely things about [Go](https://golang.org/), and wanted to try creating something myself.
 
-With just a few lines of code you can spin up an endpoint and return the infamous `hello world`.
+With just a few lines of code you can spin up an endpoint and return the infamous `hello world`
+
 
 <script src="https://gist.github.com/JonathonFry/b4abcb05be4b55ceaab5.js"></script>
 
 To deploy this to a server you first use `go build` to create a binary file. This will output an executable called `main` that we can then use to execute. That's it. (You can tweak the compilation options to build for different architectures)
 
-Building on this I recently added RSVP functionality to my wedding website [http://104.196.7.117:8080/rsvp.html](http://104.196.7.117:8080/rsvp.html) using Go. I'll open source this code on GitHub once the RSVP's are finished.
+Building on this I recently added RSVP functionality to my wedding website using Go. 
+You can find a post on how I achieved that [here](/frywedding-rsvp-using-go/).
 
 J

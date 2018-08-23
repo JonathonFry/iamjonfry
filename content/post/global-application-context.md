@@ -15,7 +15,7 @@ To do this requires you to subclass the Application class.
 
 You also need to declare this in the application tag of your Android Manifest file
 
-```xml
+```java
 <application android:name=".MyApplication"
        android:icon="@drawable/icon"
        android:label="@string/app_name">
