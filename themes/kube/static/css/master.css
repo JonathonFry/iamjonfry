@@ -3,8 +3,8 @@ body {
 }
 
 #disqus_thread {
-  padding-left: 1em;
-  padding-right: 1em;
+  max-width: 840px;
+  margin: auto;
 }
 
 h1.title,
