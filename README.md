@@ -13,6 +13,8 @@ Possibly use https://www.gatsbyjs.org/ to render as iamjonfry is static.
 
 Util to limit react boilerplate - https://github.com/facebook/create-react-app
 
+Tutorial demonstrating how to use gatsby to create a photo blog - https://jeremey.blog/gatsby-photo/
+
 
 ### Themes
 https://github.com/dimsemenov/photoswipe
