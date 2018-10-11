@@ -257,6 +257,8 @@ const queue = {
     const page = findPage(path)
     if (page) {
       return pathScriptsCache[page.path]
+    } else if (path !== `/404.html`) {
+      return queue.getResourcesForPathnameSync(`/404.html`)
     } else {
       return null
     }
@@ -326,7 +328,6 @@ const queue = {
       // In development we know the code is loaded already
       // so we just return with it immediately.
       if (process.env.NODE_ENV !== `production`) {
-        const page = findPage(path)
         const pageResources = {
           component: syncRequires.components[page.componentChunkName],
           page,
