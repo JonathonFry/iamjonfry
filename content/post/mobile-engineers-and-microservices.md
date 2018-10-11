@@ -1,9 +1,9 @@
-+++
-date = "2016-03-10T15:45:47+01:00"
-title = "Mobile engineers and microservices"
-slug = "mobile-engineers-and-microservices"
-tags = [ "code" ]
-+++
+---
+date: 2016-03-10T15:45:47+01:00
+title: "Mobile engineers and microservices"
+slug: "mobile-engineers-and-microservices"
+tags: [ "code" ]
+---
 
 Microservices are becoming increasingly popular, and with the surge in cloud services (see [Amazon Web Services](http://aws.amazon.com/) / [Google Cloud Platform](https://cloud.google.com/)), they're something that all engineers should be interested in.
 

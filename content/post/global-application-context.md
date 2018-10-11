@@ -1,9 +1,9 @@
-+++
-date = "2014-05-17T19:59:02+01:00"
-title = "Android - Creating a global Application Context"
-slug = "global-application-context"
-tags = [ "code" ]
-+++
+---
+date: 2014-05-17T19:59:02+01:00
+title: "Android - Creating a global Application Context"
+slug: "global-application-context"
+tags: [ "code" ]
+---
 
 Proper use of the Android context seems to be tricky to get right. A common problem is passing the context around unnecessarily.
 

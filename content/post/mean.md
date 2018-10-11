@@ -1,9 +1,9 @@
-+++
-date = "2014-05-18T15:00:58+01:00"
-title = "MEAN (MongoDB, Express, AngularJS, NodeJS)"
-slug = "mean"
-tags = [ "code" ]
-+++
+---
+date: 2014-05-18T15:00:58+01:00
+title: "MEAN (MongoDB, Express, AngularJS, NodeJS)"
+slug: "mean"
+tags: [ "code" ]
+---
 
 I have been keen to start learning some web development for quite some time but have been struggling with a place to start.
 I have been learning bits and pieces on the backend with MongoDB and Node.js, but have always been frustrated when it came to developing on the frontend.

@@ -1,9 +1,9 @@
-+++
-date = "2017-10-22T14:00:20+01:00"
-title = "Custom timeouts with retrofit"
-slug = "custom-timeouts-with-retrofit"
-tags = [ "code" ]
-+++
+---
+date: 2017-10-22T14:00:20+01:00
+title: "Custom timeouts with retrofit"
+slug: "custom-timeouts-with-retrofit"
+tags: [ "code" ]
+---
 
 
 I recently ran into the problem of customising timeouts for different API calls when using [retrofit](http://square.github.io/retrofit/). 

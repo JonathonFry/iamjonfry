@@ -1,9 +1,8 @@
-+++
-date = "2016-07-30T19:48:27+01:00"
-tags = ["photography"]
-title = "topolobamba"
-
-+++
+---
+date: 2016-07-30T19:48:27+01:00
+tags: ["photography"]
+title: "topolobamba"
+---
 
 <div class='pixels-photo'>
   <p>
