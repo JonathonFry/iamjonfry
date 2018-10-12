@@ -1,42 +1,44 @@
-import React from 'react'
+import React from "react";
 
 // Import typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
+import "typeface-montserrat";
+import "typeface-merriweather";
 
-import profilePic from './profile.jpg'
-import { rhythm } from '../utils/typography'
+import profilePic from "../assets/profile.jpg";
+import { rhythm } from "../utils/typography";
 
 class Bio extends React.Component {
   render() {
     return (
       <div
         style={{
-          display: 'flex',
-          marginBottom: rhythm(2.5),
+          display: "flex",
+          marginBottom: rhythm(2.5)
         }}
       >
         <img
           src={profilePic}
-          alt={`Kyle Mathews`}
+          alt={`Jonathon Fry`}
           style={{
             marginRight: rhythm(1 / 2),
             marginBottom: 0,
             width: rhythm(2),
             height: rhythm(2),
-            borderRadius: 50,
+            borderRadius: 50
           }}
         />
-        <p>
-          Written by <strong>Jonathon Fry</strong> who lives and works Edinburgh
-          building Android.{' '}
-          <a href="https://twitter.com/jonfry22">
-            You should follow him on Twitter
-          </a>
+
+        {/* TODO - Center */}
+        <p
+          style={{
+            marginBottom: 0
+          }}
+        >
+          Written by <strong>Jonathon Fry</strong>
         </p>
       </div>
-    )
+    );
   }
 }
 
-export default Bio
+export default Bio;

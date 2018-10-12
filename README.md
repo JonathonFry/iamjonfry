@@ -16,6 +16,23 @@ Util to limit react boilerplate - https://github.com/facebook/create-react-app
 Tutorial demonstrating how to use gatsby to create a photo blog - https://jeremey.blog/gatsby-photo/
 
 
+### Design
+
+Split posts into 2 categories, photo sets and blog posts.
+
+Photo set - text overview description. stream of scrollable photos, click to take to single photo overview and <> navigation.
+
+Blog post - common blog post layout, good code styling.
+
+Other:
+- Reading overview progress
+- Typography pairs
+- Simple accent colour
+
+Support top level pages - about, portfolio.
+
+
+
 ### Themes
 https://github.com/dimsemenov/photoswipe
 
