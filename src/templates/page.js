@@ -7,7 +7,7 @@ import Bio from "../components/bio";
 import Layout from "../components/layout";
 import { rhythm, scale } from "../utils/typography";
 
-class BlogPostTemplate extends React.Component {
+class PageTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = get(this.props, "data.site.siteMetadata.title");
@@ -71,10 +71,10 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
-export default BlogPostTemplate;
+export default PageTemplate;
 
-export const postQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+export const pageQuery = graphql`
+  query PageBySlug($slug: String!) {
     site {
       siteMetadata {
         title

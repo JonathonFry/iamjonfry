@@ -1,60 +1,88 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import { rhythm, scale } from "../utils/typography";
+import { rhythm } from "../utils/typography";
 
 class Template extends React.Component {
   render() {
-    const { location, children } = this.props;
-    const rootPath = `/`;
-    let header;
+    const { children } = this.props;
+    let header = (
+      <h4
+        style={{
+          marginTop: 0
+        }}
+      >
+        <Link
+          style={{
+            boxShadow: "none",
+            textDecoration: "none",
+            color: "inherit"
+          }}
+          to={"/"}
+        >
+          iamjonfry.com
+        </Link>
+      </h4>
+    );
+    let about = (
+      <h4
+        style={{
+          marginTop: 0,
+          flexWrap: "wrap"
+        }}
+      >
+        <Link
+          style={{
+            boxShadow: "none",
+            textDecoration: "none",
+            color: "inherit"
+          }}
+          to={"/about"}
+        >
+          about
+        </Link>
+      </h4>
+    );
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h1
+    let portfolio = (
+      <h4
+        style={{
+          marginTop: 0,
+          flexWrap: "wrap",
+          marginLeft: "10px"
+        }}
+      >
+        <Link
           style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0
+            boxShadow: "none",
+            textDecoration: "none",
+            color: "inherit"
           }}
+          to={"/portfolio"}
         >
-          <Link
-            style={{
-              boxShadow: "none",
-              textDecoration: "none",
-              color: "inherit"
-            }}
-            to={"/"}
-          >
-            iamjonfry.com
-          </Link>
-        </h1>
-      );
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: "Montserrat, sans-serif",
-            marginTop: 0,
-            marginBottom: rhythm(-1)
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: "none",
-              textDecoration: "none",
-              color: "inherit"
-            }}
-            to={"/"}
-          >
-            iamjonfry.com
-          </Link>
-        </h3>
-      );
-    }
+          portfolio
+        </Link>
+      </h4>
+    );
+
+    let pages = (
+      <div
+        style={{
+          display: "flex",
+          marginLeft: "auto",
+          justifyContent: "spaceBetween"
+        }}
+      >
+        {about}
+        {portfolio}
+      </div>
+    )
+
     return (
       <div
         style={{
+          display: "flex",
+          flexWrap: "wrap",
           marginLeft: "auto",
           marginRight: "auto",
           maxWidth: rhythm(24),
@@ -62,6 +90,7 @@ class Template extends React.Component {
         }}
       >
         {header}
+        {pages}
         {children}
       </div>
     );

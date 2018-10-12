@@ -12,8 +12,9 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allMarkdownRemark(
-              sort: { fields: [frontmatter___date], order: DESC }
+            allMarkdownRemark( 
+              sort: { fields: [frontmatter___date], order: DESC },
+              filter: { fileAbsolutePath: {regex : "\/post/"} },
               limit: 1000
             ) {
               edges {
@@ -50,6 +51,57 @@ exports.createPages = ({ graphql, actions }) => {
               slug: post.node.fields.slug,
               previous,
               next
+            }
+          });
+        });
+      })
+    );
+  });
+};
+
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions;
+
+  return new Promise((resolve, reject) => {
+    const page = path.resolve("./src/templates/page.js");
+    resolve(
+      graphql(
+        `
+          {
+            allMarkdownRemark( 
+              sort: { fields: [frontmatter___date], order: DESC },
+              filter: { fileAbsolutePath: {regex : "\/page/"} },
+              limit: 1000
+            ) {
+              edges {
+                node {
+                  fields {
+                    slug
+                  }
+                  frontmatter {
+                    title
+                  }
+                }
+              }
+            }
+          }
+        `
+      ).then(result => {
+        if (result.errors) {
+          console.log(result.errors);
+          reject(result.errors);
+        }
+
+        // Create pages.
+        const posts = result.data.allMarkdownRemark.edges;
+
+        _.each(posts, (post, index) => {
+
+          createPage({
+            path: post.node.fields.slug,
+            component: page,
+            context: {
+              slug: post.node.fields.slug,
             }
           });
         });

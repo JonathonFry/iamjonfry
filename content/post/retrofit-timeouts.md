@@ -11,19 +11,19 @@ I recently ran into the problem of customising timeouts for different API calls 
 
 Ideally, you would be able to specify a timeout using a custom annotation.
 
-{{< highlight kotlin >}}
+```kotlin
 interface Api {
     @Timeout(60000)
     @GET("users/{user}/repos")
     fun listRepos(@Path("user") user: String): Call<List<Repo>>
 }
-{{< /highlight >}}
+```
 
 However, without creating a wrapper around retrofit this isn't possible.
 
 Instead I created a custom [interceptor](https://square.github.io/okhttp/3.x/okhttp/okhttp3/Interceptor.html) that uses the `@Headers` annotation to parse timeouts. (This will override the default timeouts you have set on your OkHttpClient)
 
-{{< highlight kotlin >}}
+```kotlin
 class TimeoutInterceptor : Interceptor {
 
     override fun intercept(chain: Interceptor.Chain): Response {
@@ -41,19 +41,19 @@ class TimeoutInterceptor : Interceptor {
         }
     }
 }
-{{< /highlight >}}
+```
 
 To use this you add a header with your timeout to the API declaration. The interceptor will consume this and apply the custom timeout to the chain.
 
-{{< highlight kotlin >}}
+```kotlin
 @Headers("X-Timeout: 60000")
 @GET("users/{user}/repos")
 fun listRepos(@Path("user") user: String): Call<List<Repo>>
-{{< /highlight >}}
+```
 
 Don't forget to add your interceptor to your [OkHttpClient](https://square.github.io/okhttp/3.x/okhttp/okhttp3/OkHttpClient.html)
 
-{{< highlight kotlin >}}
+```kotlin
 val client = OkHttpClient.Builder()
         .addInterceptor(TimeoutInterceptor())
         .build()
@@ -64,6 +64,6 @@ val retrofit = Retrofit.Builder()
         .build()
 
 val service = retrofit.create(GitHubService::class.java)
-{{< /highlight >}}
+```
 
 This functionality was added in [OkHttp 3.9.0](https://github.com/square/okhttp/releases/tag/parent-3.9.0) so ensure you are targeting the latest version.
