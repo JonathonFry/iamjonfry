@@ -1,6 +1,7 @@
 ---
 title: "Portfolio"
 date: 2018-08-06T22:47:42+01:00
+slug: "portfolio"
 ---
 
 # Cryptolo

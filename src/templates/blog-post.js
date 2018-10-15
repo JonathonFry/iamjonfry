@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { Link, graphql } from "gatsby";
 import get from "lodash/get";
+import { DiscussionEmbed } from "disqus-react";
 
 import Bio from "../components/bio";
 import Layout from "../components/layout";
@@ -13,6 +14,11 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, "data.site.siteMetadata.title");
     const siteDescription = post.excerpt;
     const { previous, next } = this.props.pageContext;
+    const disqusShortname = "iamjonfry";
+    const disqusConfig = {
+      identifier: post.id,
+      title: post.frontmatter.title
+    };
 
     return (
       <Layout location={this.props.location}>
@@ -26,15 +32,17 @@ class BlogPostTemplate extends React.Component {
           style={{
             ...scale(-1 / 5),
             display: "block",
-            marginBottom: rhythm(1),
+            marginBottom: rhythm(1)
           }}
         >
           {post.frontmatter.date}
         </p>
-        <div style={{
-            maxWidth: rhythm(24),
+        <div
+          style={{
+            maxWidth: rhythm(24)
           }}
-          dangerouslySetInnerHTML={{ __html: post.html }} />
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
         <hr
           style={{
             marginBottom: rhythm(1)
@@ -66,6 +74,14 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
+
+        <div
+          style={{
+            width: rhythm(24)
+          }}
+        >
+          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+        </div>
       </Layout>
     );
   }
