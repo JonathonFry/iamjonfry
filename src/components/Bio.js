@@ -26,12 +26,18 @@ class Bio extends React.Component {
         <p
           style={{
             display: "flex",
-            justifyContent: "center",
             alignItems: "center",
             marginBottom: 0
           }}
         >
-          Written by Jonathon Fry
+          Written by &nbsp;
+          <span
+            style={{
+              fontWeight: "bold"
+            }}
+          >
+            Jonathon Fry
+          </span>
         </p>
       </div>
     );
