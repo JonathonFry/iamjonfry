@@ -23,14 +23,15 @@ class Bio extends React.Component {
             borderRadius: 50
           }}
         />
-
-        {/* TODO - Center */}
         <p
           style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
             marginBottom: 0
           }}
         >
-          Written by <strong>Jonathon Fry</strong>
+          Written by Jonathon Fry
         </p>
       </div>
     );
