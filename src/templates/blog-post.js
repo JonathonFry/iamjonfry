@@ -53,20 +53,31 @@ class BlogPostTemplate extends React.Component {
         <ul
           style={{
             display: "flex",
-            flexWrap: "wrap",
             justifyContent: "space-between",
             listStyle: "none",
-            padding: 0
+            width: rhythm(24),
+            marginLeft: 0
           }}
         >
-          <li>
+          <li
+            style={{
+              display: "flex",
+              marginLeft: "auto"
+            }}
+          >
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
-          <li>
+          <li
+            style={{
+              display: "flex",
+              paddingLeft: rhythm(1),
+              marginRight: "auto"
+            }}
+          >
             {next && (
               <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
