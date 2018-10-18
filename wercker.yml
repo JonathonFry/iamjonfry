@@ -1,4 +1,4 @@
-box: debian
+box: wercker/default
 build:
   steps:
     - maxon/npm-run@0.1.2:
