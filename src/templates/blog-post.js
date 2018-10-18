@@ -27,22 +27,30 @@ class BlogPostTemplate extends React.Component {
           meta={[{ name: "description", content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: "block",
-            marginBottom: rhythm(1)
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
+
         <div
           style={{
-            maxWidth: rhythm(24)
+            display: "flex",
+            flexDirection: "column"
           }}
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+        >
+          <h1>{post.frontmatter.title}</h1>
+          <p
+            style={{
+              ...scale(-1 / 5),
+              display: "block",
+              marginBottom: rhythm(1)
+            }}
+          >
+            {post.frontmatter.date}
+          </p>
+          <div
+            style={{
+              maxWidth: rhythm(24)
+            }}
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+        </div>
         <hr
           style={{
             marginBottom: rhythm(1)
@@ -53,7 +61,7 @@ class BlogPostTemplate extends React.Component {
         <ul
           style={{
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: "space-evenly",
             listStyle: "none",
             width: rhythm(24),
             marginLeft: 0
@@ -61,7 +69,7 @@ class BlogPostTemplate extends React.Component {
         >
           <li
             style={{
-              display: "flex",
+              paddingRight: rhythm(1 / 2),
               marginLeft: "auto"
             }}
           >
@@ -73,8 +81,7 @@ class BlogPostTemplate extends React.Component {
           </li>
           <li
             style={{
-              display: "flex",
-              paddingLeft: rhythm(1),
+              paddingLeft: rhythm(1 / 2),
               marginRight: "auto"
             }}
           >
