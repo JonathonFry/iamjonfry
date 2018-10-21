@@ -11,7 +11,7 @@ deploy:
   bucket: iamjonfry.com
   local_dir: public
   on:
-    branch: master
+    branch: gatsby
 env:
   global:
     - secure: XssdaL2tU9kiPb1JHOxPCkM8DbZDayWmiq47i2O5otOSCZ/kgtUoY8EcM2D4elkg08NkjeqX9e/gOz+kZ73v0BoXHgXXmE1mwKbsJ/b6l5bBzAM1H9NCmhBrGkVupu/evYnLAUMPSVOogysuY4++Qo/41Cadpy0hFldnm6WU6Z9+Bj+r2pm0itggyp8ghVt95KX0K/HIVoZxKHxdxYqZTU09P+0w+AQCEojuTv0HFWQMWNY24ITvMTtW8l9yXGNPtX0xbutKFiElwYNyFALL6Qi/gOEOEVCzgpnhmSY5ACnXO6l+7NJAOcDA4UfyUQdnFYxyOvb2oVpMXrZT/ZEGt472N+4kr/ls/iLr7mNb9NZ1eOBNBeAt5rlexhLHSQNhc5geQ/8IuGkWblwcmnmjAZtORYWWYLtcfcPqkvL/efI8/jlJKmTnTf7neLl4doRo2Nx988mE3fBpL9FozeysRDUikBhSTWz68izoAGh4f67mzy/32mZJm9unArYUQNb/7aiqYBRglDAsZP8gRI5X7KpO609naBGuxtbXUmzyg0irRR63kJyHzc4m3FS0e30t04MdKfnoZocxuxivl17C/VOzEha8BcZ2ZIDv81+zd8L7qlJBm4l6K74J5O+/SzZ0xyOCUlmHr3szfUv4X4nXGHnOXY3bsEjbfm7jY0Hs71Q=
