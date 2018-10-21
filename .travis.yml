@@ -1,0 +1,9 @@
+language: node_js
+branches:
+  only: master
+script: npm run-script build
+env:
+  global:
+  - secure: j8orfC4jzV8uLrkwgI6L0ih4Tqr/96Qpn6jie9LcyQIdkAbgdOAt+BRXIyhKqXmpowKyu0UmFINpXy0sql4AcIti0Xr562pAGJtvsauwh1Mcer/dpsWh88WCnxOTMhlqB/flzorgAqFmvHQZIYJXHy11NLvkCqfU37wRuaWs3wQ=
+  - secure: d3F8/KN1jfG2od+iyabLkJwVx+++gUOtTOh9+nG+E3H2w3zCyybU/U7xbiZF6XPpPpi8YNNbmHejH6WNsDcslTPEiL6kIk6ha2fgh+ETy9OSca6UbtBV1ihpB88GOxXoAbUnQSzx3QXyFTmSTKKqKqTSoGvO9cLtKunJY8L9lh0=
+cache: bundler
