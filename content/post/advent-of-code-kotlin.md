@@ -1,9 +1,9 @@
-+++
-date = "2016-03-08T23:53:54+01:00"
-title = "Advent of Code - Kotlin"
-slug = "advent-of-code-kotlin"
-tags = [ "code" ]
-+++
+---
+date: 2016-03-08T23:53:54+01:00
+title: "Advent of Code - Kotlin"
+slug: "advent-of-code-kotlin"
+tags: [ "code" ]
+---
 
 In case you've been living under a rock for the last few months you will have seen that [Kotlin](https://kotlinlang.org/) reached a [1.0 release](http://blog.jetbrains.com/kotlin/2016/02/kotlin-1-0-released-pragmatic-language-for-jvm-and-android/) (Congratulations!).
 

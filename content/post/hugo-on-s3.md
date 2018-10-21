@@ -1,9 +1,9 @@
-+++
-date = "2016-08-03T23:23:29+01:00"
-tags = ["code"]
-title = "Automating hugo deployment to S3"
-slug = "automating-hugo-deployment-to-s3"
-+++
+---
+date: 2016-08-03T23:23:29+01:00
+tags: ["code"]
+title: "Automating hugo deployment to S3"
+slug: "automating-hugo-deployment-to-s3"
+---
 
 After making the decision to migrate from [hugo to ghost](http://iamjonfry.com/migrating-from-ghost-to-hugo/) I also decided to test the waters with AWS (Amazon web services) for my website hosting.
 

@@ -2,6 +2,7 @@
 title: "Splitting SSH and git configs"
 date: 2018-07-24T18:28:07+01:00
 tags: ["code"]
+slug: "splitting-ssh-and-git-configs"
 ---
 
 
