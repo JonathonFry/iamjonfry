@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import get from "lodash/get";
 
+import Copyright from "../components/copyright";
 import Layout from "../components/layout";
 import { rhythm, scale } from "../utils/typography";
 
@@ -40,6 +41,7 @@ class PageTemplate extends React.Component {
             marginBottom: rhythm(1)
           }}
         />
+        <Copyright />
       </Layout>
     );
   }

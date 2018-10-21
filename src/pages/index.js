@@ -4,6 +4,7 @@ import get from "lodash/get";
 import Helmet from "react-helmet";
 
 import Bio from "../components/bio";
+import Copyright from "../components/copyright";
 import Layout from "../components/layout";
 import { rhythm } from "../utils/typography";
 
@@ -43,7 +44,16 @@ class BlogIndex extends React.Component {
           );
         })}
 
-        <Bio />
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "column"
+          }}
+        >
+          <Bio />
+          <Copyright />
+        </div>
       </Layout>
     );
   }
