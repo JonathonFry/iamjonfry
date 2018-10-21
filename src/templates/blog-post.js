@@ -5,6 +5,7 @@ import get from "lodash/get";
 import { DiscussionEmbed } from "disqus-react";
 
 import Bio from "../components/bio";
+import Copyright from "../components/copyright";
 import Layout from "../components/layout";
 import { rhythm, scale } from "../utils/typography";
 
@@ -100,6 +101,7 @@ class BlogPostTemplate extends React.Component {
         >
           <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         </div>
+        <Copyright />
       </Layout>
     );
   }
