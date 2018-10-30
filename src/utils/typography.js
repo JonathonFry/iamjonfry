@@ -31,6 +31,9 @@ const theme = {
       baseLineHeight: "24.65px"
     });
     return {
+      ".gatsby-highlight": {
+        marginRight: `${rhythm(1)}`
+      },
       a: {
         color: linkColor,
         textDecoration: "none",

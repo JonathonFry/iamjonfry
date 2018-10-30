@@ -32,7 +32,8 @@ class BlogPostTemplate extends React.Component {
         <div
           style={{
             display: "flex",
-            flexDirection: "column"
+            flexDirection: "column",
+            width: "100%"
           }}
         >
           <h1>{post.frontmatter.title}</h1>
@@ -64,7 +65,7 @@ class BlogPostTemplate extends React.Component {
             display: "flex",
             justifyContent: "space-evenly",
             listStyle: "none",
-            width: rhythm(24),
+            maxWidth: rhythm(24),
             marginLeft: 0
           }}
         >
@@ -96,7 +97,7 @@ class BlogPostTemplate extends React.Component {
 
         <div
           style={{
-            width: rhythm(24)
+            width: "100%"
           }}
         >
           <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
