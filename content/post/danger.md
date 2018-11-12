@@ -44,7 +44,7 @@ This step is a guide to integrating with Bitrise.
 
 Add a `Script` step to your workflow after your gradle build has completed:
 
-[](./script-step.png)
+![script-step](./script-step.png)
 
 ```bash
 #!/usr/bin/env bash
