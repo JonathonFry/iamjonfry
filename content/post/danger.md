@@ -1,5 +1,5 @@
 ---
-date: 2018-03-08T23:53:54+01:00
+date: 2018-11-12T23:53:54+01:00
 title: "Danger on Android"
 slug: "danger-android"
 tags: [ "code" ]
