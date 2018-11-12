@@ -14,6 +14,8 @@ https://danger.systems/guides/getting_started.html
 
 https://github.com/orta/danger-junithttps://github.com/loadsmart/danger-android_linthttps://github.com/noboru-i/danger-checkstyle_format
 
+https://github.com/Malinskiy/danger-jacoco
+
 https://medium.com/@emmaguy/tracking-android-app-metrics-431cbea2113d
 
 https://github.com/danger/awesome-danger
