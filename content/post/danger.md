@@ -11,7 +11,14 @@ A team I have been working with recently has grown to a big enough size that we 
 
 Getting started with Danger can be fairly simple, depending on where you host your repository, and what CI tool you use. 
 I setup Danger to run on a Bitbucket repository using Bitrise CI. 
-_note - danger requires Ruby._
+
+##Step 0 - Setup your environment
+
+To run Danger you need:
+* [Ruby installed](https://www.ruby-lang.org/en/documentation/installation/)
+* [bundler installed](https://bundler.io/)
+
+If you don't have either of these installed and setup do that now.
 
 ##Step 1 - Create your Gemfile
 
