@@ -147,9 +147,15 @@ Again, as I am running a large multi module project I am iterating over the chec
 Danger has provided us with useful output on PRs. We are aiming to improve our code quality in the long term so flagging up any new warnings using the lint checks is a great step forward. 
 Also having access to failed test reports and checkstyle errors can open up discussions in PRs.
 
-I've listed some of the challenges faced introducing Danger to Bitbucket + Bitrise below.
+I've created gists showing the final Gemfile and Dangerfile:
+
+`gist:jonathonfry/ab631c5b4bd3a701484c5f67e6c448b4`
+
+`gist:jonathonfry/00d5a7b24e1a5fb3b70044b85c858e6b`
 
 ##Challenges
+
+Setting up Danger wasn't all roses. I've listed some of the challenges faced introducing Danger to Bitbucket + Bitrise below.
 
 ####Running locally
 Unfortunately Danger doesn't support running locally for Bitbucket repositories. I've cloned the Danger repository and am hopeful I'll have some spare time to add this feature in a PR.
