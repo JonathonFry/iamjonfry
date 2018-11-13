@@ -107,6 +107,20 @@ module.exports = {
               // code used in markdown i.e. single backtick code like `this`.
               noInlineHighlight: false
             }
+          },
+          {
+            resolve: "gatsby-remark-copy-linked-files"
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 700,
+              linkImagesToOriginal: false,
+              withWebp: true
+            }
           }
         ]
       }
