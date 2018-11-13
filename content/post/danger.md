@@ -75,7 +75,7 @@ At this point, assuming you have PR triggers set up in Bitrise, you should be ab
 
 ![bitbucket-danger-comment](./bitbucket-danger-comment.png)
 
-##Step 5 - JUnit 
+##Step 5 - [JUnit](https://github.com/orta/danger-junit) 
 Add `gem 'danger-junit'` to your `Gemfile`
 
 Add the following to your `Dangerfile`
@@ -91,7 +91,7 @@ end
 This section processes each of the JUnit report XML files.
 As I was working on a multi module project the wildcard search finds all the applicable JUnit test reports to process.
 
-##Step 6 - Android Lint
+##Step 6 - [Android Lint](https://github.com/loadsmart/danger-android_lint)
 Add `gem 'danger-android_lint'` to your `Gemfile`
 
 Add the following to your `Dangerfile`
@@ -112,7 +112,7 @@ This requires the `lint` gradle task to be executed.
 
 `android_lint.filtering = true` - only displays the lint result of files modified in the PR, this helps to reduce noise if you are working on a large project.
 
-##Step 7 - Checkstyle
+##Step 7 - [Checkstyle](https://github.com/noboru-i/danger-checkstyle_format)
 If you are running [checkstyle](https://github.com/checkstyle/checkstyle) to maintain code formatting / code standards in your repository you can use this plugin to display checkstyle reports in your PR.
 
 Add `gem 'danger-checkstyle_format'` to your `Gemfile`
@@ -139,23 +139,8 @@ Currently offline mode `danger pr` only works with GitHub repositories.
 Danger does not support bitbucket authentication with a token.
 
 
-## Links
-https://blog.bitrise.io/danger-danger-uh-that-is-using-danger-with-bitrise
-
-https://danger.systems/guides/getting_started.html
-
-https://github.com/orta/danger-junit
-
-https://github.com/loadsmart/danger-android_lint
-
-https://github.com/noboru-i/danger-checkstyle_format
-
-https://github.com/Malinskiy/danger-jacoco
-
-https://medium.com/@emmaguy/tracking-android-app-metrics-431cbea2113d
-
-https://github.com/danger/awesome-danger
-
-https://github.com/operando/AndroidDangerSample/blob/master/Dangerfile
-
-https://medium.com/@p.tournaris/building-a-helpful-android-ci-with-danger-jenkins-bf751be7a74c
+##Inspiration
+* https://danger.systems/guides/getting_started.html
+* https://blog.bitrise.io/danger-danger-uh-that-is-using-danger-with-bitrise
+* https://github.com/danger/awesome-danger
+* https://medium.com/@emmaguy/tracking-android-app-metrics-431cbea2113d
