@@ -21,8 +21,7 @@ To run Danger you need:
 If you don't have either of these installed and setup do that now.
 
 ##Step 1 - Create your Gemfile
-
-Run `bundler init` to create a `Gemfile` in your project.
+Run `bundler init` in the root of your project to create a `Gemfile`.
 
 Add the danger gem to the `Gemfile`.
 
@@ -76,7 +75,7 @@ DANGER_BITBUCKETCLOUD_USERNAME
 DANGER_BITBUCKETCLOUD_PASSWORD
 ```
 
-I would suggest you create a new user in Bitbucket to use for CI. This means you can set a sensible name and avatar to make it clearer what is commenting on their PR.
+I would suggest you create a new user in Bitbucket for integration with your CI system. This means you can set a sensible name and avatar to make it clearer what is commenting on their PR.
 
 At this point, assuming you have PR triggers set up in Bitrise, you should be able to create a PR in Bitbucket and get Danger output as a comment.
 
