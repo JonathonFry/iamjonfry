@@ -1,0 +1,37 @@
+    baseurl = "https://iamjonfry.com/"
+languageCode = "en-us"
+title = "iamjonfry"
+theme = "hello-friend"
+paginate = 5
+showReadingTime = true
+googleAnalytics = "UA-50203596-1"
+disqusShortname = "iamjonfry"
+
+[languages]
+  [languages.en]
+    title = "iamjonfry"
+    subtitle = "iamjonfry"
+        [languages.en.params.logo]
+        logoText = "iamjonfry"
+
+[permalinks]
+    post = "/:slug/"
+    page = "/:title/"
+
+[params]
+    description = "iamjonfry.com"
+    twitter = "https://twitter.com/jonfry22"
+    github = "https://github.com/JonathonFry/"
+
+    [params.logo]
+    url = "fry.png"
+    width = 50
+    height = 50
+
+[[menu.main]]
+    name = "code"
+    url = "/tags/code/"
+
+[[menu.main]]
+      name = "photography"
+      url = "/tags/photography/"
