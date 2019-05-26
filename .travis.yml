@@ -2,8 +2,7 @@ language: go
 go:
     - master
 install:
-    - go get -u github.com/gohugoio/hugo 
-    - go mod init
+    - go get -v github.com/gohugoio/hugo...
 script:
     - hugo
 deploy:
