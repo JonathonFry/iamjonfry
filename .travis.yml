@@ -1,7 +1,7 @@
-language: node_js
-node_js:
-  - node
-script: npm run-script build
+language: go
+go: master
+install: go get github.com/spf13/hugo
+script: hugo
 deploy:
   provider: s3
   access_key_id:
