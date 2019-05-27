@@ -1,8 +1,6 @@
-language: go
-go:
-    - master
 install:
-    - go get -v github.com/gohugoio/hugo...
+  - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.55/hugo_0.55_Linux-64bit.deb
+  - sudo dpkg -i /tmp/hugo.deb
 script:
     - hugo
 deploy:
