@@ -1,4 +1,4 @@
-    baseurl = "https://iamjonfry.com/"
+baseurl = "https://iamjonfry.com/"
 languageCode = "en-us"
 title = "iamjonfry"
 theme = "hello-friend"
