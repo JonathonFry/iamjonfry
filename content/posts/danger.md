@@ -57,7 +57,7 @@ This step is a guide to integrating with [Bitrise](https://www.bitrise.io/).
 
 Add a `Script` step to your workflow after your gradle build has completed:
 
-![script-step](./script-step.png)
+![script-step](/static/script-step.png)
 
 ```bash
 #!/usr/bin/env bash
@@ -87,7 +87,7 @@ I would suggest you create a new user in Bitbucket for integration with your CI 
 
 At this point, assuming you have PR triggers set up in Bitrise, you should be able to create a PR in Bitbucket and get Danger output as a comment. As the PR will be small you should receive your first 'All green' message from Danger!
 
-![bitbucket-danger-comment](./bitbucket-danger-comment.png)
+![bitbucket-danger-comment](/static/bitbucket-danger-comment.png)
 
 ##Step 5 - [JUnit](https://github.com/orta/danger-junit) 
 Add `gem 'danger-junit'` to your `Gemfile`
