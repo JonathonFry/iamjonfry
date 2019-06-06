@@ -3,6 +3,7 @@ date: 2019-05-26T10:30:00+01:00
 title: "Simplify your adapters - lambdas in data classes"
 slug: "lambdas-in-data-classes"
 tags: [ "android", "code", "kotlin" ]
+cover: "/static/data-class-lambda-cover.jpg"
 ---
 
 
