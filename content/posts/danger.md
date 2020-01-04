@@ -19,15 +19,16 @@ This is an example of the output that Danger can produce:
 Getting started with Danger can be fairly simple, depending on where you host your repository, and what CI tool you use. 
 I setup Danger to run on a Bitbucket repository using Bitrise CI. This combination proved slightly trickier than if I was using GitHub as Danger was built with first party support for GitHub.
 
-##Step 0 - Setup your environment
+## Step 0 - Setup your environment
 
 To run Danger you need:
+
 * [Ruby installed](https://www.ruby-lang.org/en/documentation/installation/)
 * [bundler installed](https://bundler.io/)
 
 If you don't have either of these installed and setup do that now.
 
-##Step 1 - Create your Gemfile
+## Step 1 - Create your Gemfile
 Run `bundler init` in the root of your project to create a `Gemfile`.
 
 Add the danger gem to the `Gemfile`.
@@ -38,20 +39,20 @@ gem 'danger'
 
 The gemfile is used by Ruby to declare a list of dependencies. This is where we will add our plugins to Danger.
 
-##Step 2 - Install Danger
+## Step 2 - Install Danger
 Install the Danger gem.
 ```ruby
 bundle install
 ```
 
-##Step 3 - Create a Dangerfile
+## Step 3 - Create a Dangerfile
 Create a file called `Dangerfile` in the root of your project.
 To start with, add a git check to the Dangerfile. This gives a warning if your PR has > 500 line changes.
 ```ruby
 warn("Big PR") if git.lines_of_code > 500
 ```
 
-##Step 4 - Integrate with CI
+## Step 4 - Integrate with CI
 
 This step is a guide to integrating with [Bitrise](https://www.bitrise.io/). 
 
@@ -89,7 +90,7 @@ At this point, assuming you have PR triggers set up in Bitrise, you should be ab
 
 ![bitbucket-danger-comment](/static/bitbucket-danger-comment.png)
 
-##Step 5 - [JUnit](https://github.com/orta/danger-junit) 
+## Step 5 - [JUnit](https://github.com/orta/danger-junit) 
 Add `gem 'danger-junit'` to your `Gemfile`
 
 Add the following to your `Dangerfile`
@@ -105,7 +106,7 @@ end
 This section processes each of the JUnit report XML files.
 As I was working on a multi module project the wildcard search finds all the applicable JUnit test reports to process.
 
-##Step 6 - [Android Lint](https://github.com/loadsmart/danger-android_lint)
+## Step 6 - [Android Lint](https://github.com/loadsmart/danger-android_lint)
 Add `gem 'danger-android_lint'` to your `Gemfile`
 
 Add the following to your `Dangerfile`
@@ -126,7 +127,7 @@ This requires the `lint` gradle task to be executed.
 
 `android_lint.filtering = true` - only displays the lint result of files modified in the PR, this helps to reduce noise if you are working on a large project.
 
-##Step 7 - [Checkstyle](https://github.com/noboru-i/danger-checkstyle_format)
+## Step 7 - [Checkstyle](https://github.com/noboru-i/danger-checkstyle_format)
 If you are running [checkstyle](https://github.com/checkstyle/checkstyle) to maintain code formatting / code standards in your repository you can use this plugin to display checkstyle reports in your PR.
 
 Add `gem 'danger-checkstyle_format'` to your `Gemfile`
@@ -143,7 +144,7 @@ end
 
 Again, as I am running a large multi module project I am iterating over the checkstyle output files from every module.
 
-##Outcome
+## Outcome
 Danger has provided us with useful output on PRs. We are aiming to improve our code quality in the long term so flagging up any new warnings using the lint checks is a great step forward. 
 Also having access to failed test reports and checkstyle errors can open up discussions in PRs.
 
@@ -153,11 +154,11 @@ I've created gists showing the final Gemfile and Dangerfile:
 
 `gist:jonathonfry/00d5a7b24e1a5fb3b70044b85c858e6b`
 
-##Challenges
+## Challenges
 
 Setting up Danger wasn't all roses. I've listed some of the challenges faced introducing Danger to Bitbucket + Bitrise below.
 
-####Running locally
+#### Running locally
 Unfortunately Danger doesn't support running locally for Bitbucket repositories. I've cloned the Danger repository and am hopeful I'll have some spare time to add this feature in a PR.
 
 Currently you can only run danger locally with GitHub repositories:
@@ -165,18 +166,18 @@ Currently you can only run danger locally with GitHub repositories:
 `bundle exec danger pr` 
 
 
-####Bitbucket token authorisation
+#### Bitbucket token authorisation
 Danger does not support bitbucket authentication with a token. I think this is a limitation of the Bitbucket API as you can't access it using a token. 
 Token access would be useful for security purposes allowing us to generate access tokens for specific use cases.
 
-##Future work
+## Future work
 [APK analyzer](https://github.com/STAR-ZERO/danger-apkanalyzer) - Provide APK analysis including file size, permissions, and method count. You can see sample output from this plugin on GitHub here:
 
 ![apk-analyzer-output](https://github.com/STAR-ZERO/danger-apkanalyzer/raw/master/image.png)
 
 [Track android app metrics](https://medium.com/@emmaguy/tracking-android-app-metrics-431cbea2113d) - [Emma Guy](https://twitter.com/emmaguy) from [Monzo](https://monzo.com/) has taken this one step further and used Danger to track historical change in APK metrics.
 
-##Inspiration
+## Inspiration
 * https://danger.systems/guides/getting_started.html
 * https://blog.bitrise.io/danger-danger-uh-that-is-using-danger-with-bitrise
 * https://github.com/danger/awesome-danger
