@@ -21,6 +21,7 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 - [How to edit the theme](#how-to-edit-the-theme)
 - [How to contribute](#how-to-contribute)
 - [Hello Friend theme user?](#hello-friend-theme-user)
+- [Sponsoring](#sponsoring)
 - [Licence](#licence)
 
 ## Features
@@ -36,6 +37,7 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
   - eg: `{{< image src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" >}}`
 - **`figure`** (same as `image`, plus few optional props: **`caption`**, **`captionPosition`** (left | **center** is default | right), **`captionStyle`**
   - eg: `{{< figure src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" caption="Hello Friend!" captionPosition="right" captionStyle="color: red;" >}}`
+- **`imgproc`** Hugo shortcode for image processing. More info at [https://gohugo.io/content-management/image-processing/](https://gohugo.io/content-management/image-processing/)
 
 #### Code highlighting
 
@@ -137,7 +139,8 @@ Adding a cover image to your post is simple and there are two options when you e
 
 - **Archive** — Theme has built-in `archive` page for main content (see `contentTypeName` variable in config). If you need archive on your blog just copy https://github.com/panr/hugo-theme-hello-friend/blob/master/exampleSite/content/archive.md to your `content` dir. If you need multilangual archives, duplicate `content/archive.md` and add `.Lang` variable, eg: `content/archive.pl.md` (remember to change `url` in duplicated file).
 - **Comments** — for adding comments to your blog posts please take a look at `layouts/partials/comments.html` https://github.com/panr/hugo-theme-terminal/blob/master/layouts/partials/comments.html.
-- **Extended `<head>`** — if you need to add something inside `<head>` element, please take a look at `layouts/partial/extended_head.html` https://github.com/panr/hugo-theme-hello-friend/blob/master/layouts/partials/extended_head.html
+- **Prepended `<head>`** — if you need to add something inside `<head>` element, and before any of the theme's `<script>` and `<link>` tags are declared, please take a look at `layouts/partial/prepended_head.html` https://github.com/panr/hugo-theme-hello-friend/blob/master/layouts/partials/prepended_head.html
+- **Extended `<head>`** — if you need to add something inside `<head>` element, after all of all of the theme's `<script>` and `<link>` tags are declared, please take a look at `layouts/partial/extended_head.html` https://github.com/panr/hugo-theme-hello-friend/blob/master/layouts/partials/extended_head.html
 - **Extended `<footer>`** — if you need to add something before end of `<body>` element, please take a look at `layouts/partial/extended_footer.html` https://github.com/panr/hugo-theme-hello-friend/blob/master/layouts/partials/extended_footer.html
 
 ## How to run your site
@@ -176,7 +179,13 @@ If you spot any bugs, please use [Issue Tracker](https://github.com/panr/hugo-th
 
 I'd be happy to know more about you and what you are doing. If you want to share it, please make a contribution and [add your site to the list](https://github.com/panr/hugo-theme-hello-friend/blob/master/USERS.md)! 🤗
 
-## Licence
+## Sponsoring
+
+If you like my work and want to support the development of the project, now you can! Just:
+
+<a href="https://www.buymeacoffee.com/panr" target="_blank"><img src="https://res.cloudinary.com/panr/image/upload/v1579374705/buymeacoffee_y6yvov.svg" alt="Buy Me A Coffee" ></a>
+
+## License
 
 Copyright © 2019 Radosław Kozieł ([@panr](https://twitter.com/panr))
 
