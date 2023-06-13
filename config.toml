@@ -1,11 +1,11 @@
 baseurl = "https://iamjonfry.com/"
-languageCode = "en-us"
+languageCode = "en-gb"
 title = "iamjonfry"
 theme = "hugo-blog-awesome"
 paginate = 5
 showReadingTime = true
 googleAnalytics = "UA-50203596-1"
-disqusShortname = "iamjonfry"
+#disqusShortname = "iamjonfry"
 
 [languages]
   [languages.en]
@@ -48,9 +48,5 @@ name = "Rss"
 url = "index.xml"
 
 [[menu.main]]
-    name = "code"
-    url = "/tags/code/"
-
-[[menu.main]]
-      name = "photography"
-      url = "/tags/photography/"
+    name = "about"
+    url = "/about/"
