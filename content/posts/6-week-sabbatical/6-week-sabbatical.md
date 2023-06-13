@@ -12,3 +12,12 @@ I hit 4 years at Monzo in January of this year and broke my sabbatical into two:
 - 6 weeks next year ~August
 
 I'm currently 3 weeks in.
+
+- visiting scotland where i used to live
+    - photos of scotland trip
+- gardening
+    - photos of allotment
+- diy
+    - photos of wip planters
+- surgery - mini update
+- scratching the programming itch building happy-desk - a place to view awesome desk setups and find out what makes them good.
