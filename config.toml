@@ -35,6 +35,18 @@ disqusShortname = "iamjonfry"
   name = "Jonathon Fry"
 #  description = "Engineering"
 
+[[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/jonathonfry"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/jonfry22"
+
+[[params.socialIcons]]
+name = "Rss"
+url = "index.xml"
+
 [[menu.main]]
     name = "code"
     url = "/tags/code/"
