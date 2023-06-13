@@ -1,7 +1,7 @@
 baseurl = "https://iamjonfry.com/"
 languageCode = "en-us"
 title = "iamjonfry"
-theme = "hello-friend"
+theme = "hugo-blog-awesome"
 paginate = 5
 showReadingTime = true
 googleAnalytics = "UA-50203596-1"
@@ -27,6 +27,13 @@ disqusShortname = "iamjonfry"
     url = "fry.png"
     width = 50
     height = 50
+
+[params.author]
+#  avatar = "fry.png" # put the file in assets folder; also ensure that image has same height and width
+  # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
+  intro = "iamjonfry"
+  name = "Jonathon Fry"
+#  description = "Engineering"
 
 [[menu.main]]
     name = "code"
