@@ -1,5 +1,5 @@
 ---
-date: 2023-06-13T22:00:00+01:00
+date: 2023-06-15T19:00:00+01:00
 title: "Sabbtical check in"
 slug: "sabbatical-check-in"
 draft: true
@@ -28,15 +28,17 @@ It was lovely to go back, visit old friends and see the city of Edinburgh. My ki
 --|--|--
 ![DIY 1](/static/diy-1.jpg)|![DIY 2](/static/diy-2.jpg)|![DIY 3](/static/diy-3.jpg)
 
-Since moving to Bath a few years ago, we've had lots of jobs to do around the house and fitting that in between work and family life was hard.
+Since moving to Bath a few years ago, we've had lots of jobs to do around the house and fitting that in between work and family life is hard.
 This has been a great opportunity to finally catch up on all the small jobs.
 
 I started out by building some planters in the garden to box off our decking. It was my first time mixing concrete to set the post supports, and using postcrete it was really easy. I ended up having to dig the holes with a hand trowel which was _not_ ideal.
 I'm now waiting on some more wood to be delivered so I can finish them off and plant the lavender.
 
-As a software engineer I spend a lot of time building things with an almost instant feedback loop. Building something 'real' is very different but also immensely satisfying - you can't refactor something made of wood in the same way you can refactor code.
+Building something 'real' is very different but also immensely satisfying - you can't refactor something made of wood in the same way you can refactor code.
 
 > measure twice, cut once
+
+Or as I usually do, _measure twice cut thrice_.
 
 ### Week 3 - Surgery
 ||
@@ -44,12 +46,14 @@ As a software engineer I spend a lot of time building things with an almost inst
 ![Surgery 1](/static/surgery-1.jpg)|![Surgery 2](/static/surgery-2.jpg)|![Surgery 3](/static/surgery-3.jpg)
 
 Eldest kiddo has struggled with sleep apnoea for the last year, so had a long overdue operation to remove his tonsils. Really thankful I had the time away from work to focus on supporting him to get through it 💪
-_Surgery went well and kiddo is recovering nicely._
+**Surgery went well and kiddo is recovering nicely.**
 
-Also had lots of time where we couldn't venture far from home, which meant lots of sorting (kondo life) - I own far too many pens/notebooks - and time spent gardening in the sunshine.
+Also had lots of time where we couldn't venture far from home, which meant lots of sorting - _I own far too many pens/notebooks_ - and time spent gardening in the sunshine.
 
 ### Bonus - scratching the problem solving itch
 
 ![Happy desk](/static/happy-desk.jpg)
 
-I love building things. After a few weeks not writing code, I picked up an old project - happy desk. A place ot view awesome desk setups and find out what makes them good.
+I love building things. After a few weeks not writing code, I picked up an old project - happy desk. A place to view awesome desk setups and find out what makes them good.
+
+I mostly use side projects as a way to learn new things, and I've been using this to learn the basics of [htmx](https://htmx.org/). I _really_ want to get comfortable building websites, but all my previous attempts have failed. In my experience the web is far too fractured/complicated to dip in and out of.
