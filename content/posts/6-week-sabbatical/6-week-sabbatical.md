@@ -12,7 +12,7 @@ I hit 4 years at Monzo in January of this year and decided to split my sabbatica
 1. 6 weeks this year ~June
 2. 6 weeks next year ~August
 
-*I'm currently 3 weeks in.*
+**I'm currently 3 weeks in.**
 
 ### Week 1 - Scotland
 ||
@@ -57,3 +57,9 @@ Also had lots of time where we couldn't venture far from home, which meant lots 
 I love building things. After a few weeks not writing code, I picked up an old project - happy desk. A place to view awesome desk setups and find out what makes them good.
 
 I mostly use side projects as a way to learn new things, and I've been using this to learn the basics of [htmx](https://htmx.org/). I _really_ want to get comfortable building websites, but all my previous attempts have failed. In my experience the web is far too fractured/complicated to dip in and out of.
+
+When it's a little further along, I'll push it somewhere public and see if I can get some real world users.
+
+---
+
+3 weeks down, 3 weeks to go. I will write a follow up post before I head back to work 🔜 
