@@ -1,6 +1,6 @@
 ---
 date: 2023-06-15T19:00:00+01:00
-title: "Sabbtical check in"
+title: "Sabbatical check in"
 slug: "sabbatical-check-in"
 ---
 
